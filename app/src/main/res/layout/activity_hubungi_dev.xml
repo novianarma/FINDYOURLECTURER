@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    tools:context=".HubungiDevActivity">
+
+    <Button
+        android:id="@+id/btback3"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:background="@drawable/btback"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:onClick="btback3"/>
+
+    <ImageView
+        android:id="@+id/imagelogo"
+        android:layout_width="180dp"
+        android:layout_height="163dp"
+        android:layout_alignBottom="@id/btback3"
+        android:layout_marginLeft="140dp"
+        android:layout_marginBottom="-145dp"
+        app:srcCompat="@drawable/logohubungi" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bttelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/call"
+            android:onClick="bttelp" />
+
+        <Button
+            android:id="@+id/btwa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wa"
+            android:layout_marginLeft="10dp"
+            android:onClick="btwa" />
+
+    </LinearLayout>
+</RelativeLayout>

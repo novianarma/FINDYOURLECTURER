@@ -1,0 +1,2 @@
+include ':app', ':wifiutils'
+rootProject.name='FIND YOUR LECTURER'

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5"
+    tools:context=".MenuUtamaUserActivity">
+
+    <ImageView
+        android:id="@+id/imagelogo"
+        android:layout_width="142dp"
+        android:layout_height="132dp"
+        android:layout_alignBottom="@id/btlogout1"
+        android:layout_marginLeft="180dp"
+        android:layout_marginBottom="-128dp"
+        app:srcCompat="@drawable/logo1" />
+
+    <Button
+        android:id="@+id/btcaridosen"
+        android:layout_width="275dp"
+        android:layout_height="110dp"
+        android:layout_alignBottom="@id/imagelogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-157dp"
+        android:onClick="btcaridosen"
+        android:background="@drawable/btcaridosen" />
+
+    <Button
+        android:id="@+id/bteditdata"
+        android:layout_width="275dp"
+        android:layout_height="110dp"
+        android:layout_alignBottom="@id/btcaridosen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-124dp"
+        android:onClick="bteditdata"
+        android:background="@drawable/editdata" />
+
+    <Button
+        android:id="@+id/btlogout1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/logout"
+        android:onClick="btlogout1"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"/>
+
+</RelativeLayout>

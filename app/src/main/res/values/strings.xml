@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FIND YOUR LECTURER</string>
+    <string name="title_activity_maps">FIND YOUR LECTURER</string>
+    <string name="detail">detail</string>
+    <string name="heroes_name">nama</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

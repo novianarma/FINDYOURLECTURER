@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MhsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center|center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/caridosen"
+            android:layout_width="240dp"
+            android:layout_height="35dp"
+            android:height="15dp"
+            android:background="@drawable/searchbox"
+            android:hint="Cari mahasiswa..."
+            android:paddingLeft="15dp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown" />
+
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listviewmhs"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/kotak" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="260dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="hapus berdasarkan tahun"
+        android:textColor="#EEEEEE"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:id="@+id/btn_hapus"
+        />
+</FrameLayout>

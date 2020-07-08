@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DosenFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/caridosen"
+            android:layout_width="305dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:height="15dp"
+            android:background="@drawable/searchbox"
+            android:hint="Cari dosen..."
+            android:paddingLeft="15dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listviewdosen"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/kotak" />
+
+
+</FrameLayout>

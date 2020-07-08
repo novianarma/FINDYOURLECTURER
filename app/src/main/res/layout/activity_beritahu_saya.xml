@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    tools:context=".BeritahuSayaActivity"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btback"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btback"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:onClick="btback"/>
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="180dp"
+                android:layout_height="168dp"
+                app:srcCompat="@drawable/beritahusaya"
+                android:layout_alignBottom="@id/btlogout1"
+                android:layout_marginLeft="150dp"
+                android:layout_marginBottom="-135dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="140dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/caridosen2"
+                    android:layout_width="305dp"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:height="15dp"
+                    android:background="@drawable/searchbox"
+                    android:hint="Ketik nama dosen disini..."
+                    android:paddingLeft="15dp"/>
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listdosen"
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/kotak"
+                android:listSelector="@android:color/holo_purple" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="35dp">
+            <Button
+                android:id="@+id/btsimpan3"
+                android:layout_width="270dp"
+                android:layout_height="38dp"
+                android:background="@drawable/btsimpan"
+                android:onClick="btsimpan3"/>
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/btberhenti"
+                android:layout_width="270dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/batal"
+                android:onClick="btberhenti" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

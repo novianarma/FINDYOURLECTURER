@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context=".LoginAdminActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/login"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="50dp"/>
+
+    <Button
+        android:id="@+id/btlogin"
+        android:layout_width="266dp"
+        android:layout_height="38dp"
+        android:layout_alignBottom="@id/showpass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-73dp"
+        android:background="@drawable/btlogin"
+        android:onClick="btlogin" />
+
+    <EditText
+        android:id="@+id/editpassword"
+        android:layout_width="270dp"
+        android:layout_height="49dp"
+        android:layout_alignBottom="@id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-55dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/showpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Password"
+        android:layout_marginLeft="44dp"
+        android:layout_marginBottom="-30dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13dp"
+        android:layout_alignBottom="@id/editpassword" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageView3"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="-53dp"
+        app:srcCompat="@drawable/passwordkecil" />
+</RelativeLayout>

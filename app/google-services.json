@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "29500302240",
+    "firebase_url": "https://skripsinovian-dbd31.firebaseio.com",
+    "project_id": "skripsinovian-dbd31",
+    "storage_bucket": "skripsinovian-dbd31.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29500302240:android:437ecf207e9f1d7036bac5",
+        "android_client_info": {
+          "package_name": "com.example.findyourlecturer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29500302240-s40u7cijuat2hv4cqm1fv7u4upidi7s1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.findyourlecturer",
+            "certificate_hash": "18e3d9711e4e073a4ee33b7fcb2fd71bee973ab9"
+          }
+        },
+        {
+          "client_id": "29500302240-dme8bhldvfmu55n18h9pf148ogbig473.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_SZ8YjCzc5-oNHQ89LGZcMdXCofjDN5c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29500302240-dme8bhldvfmu55n18h9pf148ogbig473.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

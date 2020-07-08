@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5"
+    tools:context=".MenuUtamaAdminActivity">
+
+    <Button
+        android:id="@+id/btlogout"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/logout"
+        android:layout_marginTop="40dp"
+        android:onClick="btlogout"
+        android:layout_marginLeft="40dp"/>
+
+    <ImageView
+        android:id="@+id/imagelogo"
+        android:layout_width="142dp"
+        android:layout_height="132dp"
+        android:layout_alignBottom="@id/btlogout"
+        android:layout_marginLeft="180dp"
+        android:layout_marginBottom="-115dp"
+        app:srcCompat="@drawable/logo1" />
+
+    <Button
+        android:id="@+id/btinputnimnik"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imagelogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-127dp"
+        android:onClick="btinputnimnik"
+        android:background="@drawable/inputnimnik" />
+
+    <Button
+        android:id="@+id/btlistuser"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btinputnimnik"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-94dp"
+        android:onClick="btlistuser"
+        android:background="@drawable/btlistuser" />
+
+    <Button
+        android:id="@+id/bthubungi"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btlistuser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-94dp"
+        android:onClick="bthubungi"
+        android:background="@drawable/hubungi" />
+
+</RelativeLayout>

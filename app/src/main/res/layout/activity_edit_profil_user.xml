@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    tools:context=".EditProfilUserActivity">
+
+    <Button
+        android:id="@+id/btback3"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:background="@drawable/btback"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:onClick="btback3"/>
+
+    <ImageView
+        android:id="@+id/imagelogo"
+        android:layout_width="122dp"
+        android:layout_height="112dp"
+        android:layout_alignBottom="@id/btback3"
+        android:layout_marginLeft="200dp"
+        android:layout_marginBottom="-120dp"
+        app:srcCompat="@drawable/editprofil" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignBottom="@id/imagelogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-295dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/nip"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/noidentitas" />
+
+            <EditText
+                android:id="@+id/editnoidentitas"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="34dp"
+                android:inputType="textPersonName"
+                android:lines="10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/namalengkap"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/namalengkap" />
+            <EditText
+                android:id="@+id/editnamalengkap"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:inputType="textPersonName"
+                android:lines="10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/email" />
+
+            <EditText
+                android:id="@+id/editemail"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="86dp"
+                android:inputType="textPersonName"
+                android:lines="10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/password" />
+
+            <EditText
+                android:id="@+id/editpassword"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="57dp"
+                android:inputType="textPersonName"
+                android:lines="10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/user" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp">
+
+                <RadioGroup
+                    android:id="@+id/rbpilihuser"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <RadioButton
+                        android:id="@+id/rbdosen"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="95dp"
+                        android:text="Dosen" />
+
+                    <RadioButton
+                        android:id="@+id/rbmahasiswa"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="95dp"
+                        android:text="Mahasiswa" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/tahunmasuk">
+
+            <ImageView
+                android:id="@+id/tahun"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/tahun" />
+
+            <EditText
+                android:id="@+id/edittahunmasuk"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="81dp"
+                android:gravity="center_horizontal"
+                android:inputType="textPersonName"
+                android:lines="10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="30dp"
+                android:text="-" />
+
+            <EditText
+                android:id="@+id/edittahunkeluar"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_horizontal"
+                android:inputType="textPersonName"
+                android:lines="10" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="515dp"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/btedit"
+            android:layout_width="270dp"
+            android:layout_height="38dp"
+            android:onClick="bteditt"
+            android:background="@drawable/btsimpan" />
+    </LinearLayout>
+
+</RelativeLayout>
