@@ -30,6 +30,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 public class EditUserActivity extends AppCompatActivity {
@@ -62,14 +63,17 @@ public class EditUserActivity extends AppCompatActivity {
 
         Intent intent= getIntent();
         String noidentitas = intent.getStringExtra("noidentitas");
-        editno.setText(noidentitas);
+//        editno.setText(noidentitas);
         String nama = intent.getStringExtra("nama");
         editnama.setText(nama);
         String email = intent.getStringExtra("email");
-        editemail.setText(email);
+//        editemail.setText(email);
         String psswrd = intent.getStringExtra("psswrd");
-        editpsswrd.setText(psswrd);
+//        editpsswrd.setText(psswrd);
         String pilihuser = intent.getStringExtra("user");
+        Query query3 = FirebaseDatabase.getInstance().getReference("user").child("Mahasiswa").orderByChild("namalengkap").equalTo(nama);
+        query3.addListenerForSingleValueEvent(valueEventListener);
+
         if(pilihuser.equals("Dosen"))
         {
             rbdosen.setChecked(true);
@@ -129,4 +133,20 @@ public class EditUserActivity extends AppCompatActivity {
         progressDialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
 
     }
+    ValueEventListener valueEventListener = new ValueEventListener() {
+        @Override
+        public void onDataChange(DataSnapshot dataSnapshot) {
+            for (DataSnapshot snapshot : dataSnapshot.getChildren()){
+                user = snapshot.getValue(user.class);
+                editemail.setText(user.getEmail());
+                editpsswrd.setText(user.getPassword());
+                editno.setText(user.getNoidentitas());
+            }
+        }
+
+        @Override
+        public void onCancelled(DatabaseError databaseError) {
+
+        }
+    };
 }

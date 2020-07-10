@@ -77,15 +77,25 @@ public class PendaftaranUserActivity extends AppCompatActivity {
         mPilihUser = findViewById(R.id.rbpilihuser);
 //        list = new ArrayList<>();
 //        datadosen = new datadosen();
+        final int pilihbt = mPilihUser.getCheckedRadioButtonId();
 
         FirebaseApp.initializeApp(this);
         user2 = new datadosen();
         user3 = new datamhs();
 
+        if (pilihbt == mDosen.getId()) {
+            Toast.makeText(PendaftaranUserActivity.this, "aaaaaaaaaaa", Toast.LENGTH_SHORT).show();
+        }
+
+        else if (pilihbt == mMahasiswa.getId()) {
+            Toast.makeText(PendaftaranUserActivity.this, "bbbbbbbbbbb", Toast.LENGTH_SHORT).show();
+        }
+
+
+
         mBtSimpan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final int pilihbt = mPilihUser.getCheckedRadioButtonId();
                 final String email = mEmail.getText().toString().trim();
                 final String password = mPassword.getText().toString().trim();
                 final String namalengkap = mNamaLengkap.getText().toString().trim();
