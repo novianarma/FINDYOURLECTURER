@@ -152,6 +152,61 @@ public class MyService extends IntentService {
                     myRef = database.getReference("user").child("Dosen").child(user + "/tgljam");
                     myRef.setValue(dateTime);
                 }
+                else if (wifis[i].equals("Gedung AH lantai 1")) { //WIFI
+
+                    WifiConfiguration wifiConfig = new WifiConfiguration();
+                    wifiConfig.SSID = String.format("\"%s\"", wifis[i]);
+                    wifiConfig.preSharedKey = String.format("\"%s\"", "polinema"); //PASSWORD
+
+                    WifiManager wifiManager = (WifiManager) getApplicationContext().getSystemService(WIFI_SERVICE);
+                    //remember id
+                    int netId = wifiManager.addNetwork(wifiConfig);
+                    wifiManager.disconnect();
+                    wifiManager.enableNetwork(netId, true);
+                    wifiManager.reconnect();
+
+                    //INPUT TO FIREBASE
+                    fAuth = FirebaseAuth.getInstance();
+                    String user = fAuth.getCurrentUser().getUid();
+                    FirebaseDatabase database = FirebaseDatabase.getInstance();
+                    DatabaseReference myRef = database.getReference("user").child("Dosen").child(user + "/ssid");
+                    myRef.setValue("Gedung AH lantai 1");
+
+                    //MENAMPILKAN DATE&TIME
+                    Calendar calendar = Calendar.getInstance();
+                    SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEEE, dd-MMM-yyyy | hh:mm a");
+                    String dateTime = simpleDateFormat.format(calendar.getTime());
+                    myRef = database.getReference("user").child("Dosen").child(user + "/tgljam");
+                    myRef.setValue(dateTime);
+                }
+                else if (wifis[i].equals("Gedung AH lantai 2")) { //WIFI
+
+                    WifiConfiguration wifiConfig = new WifiConfiguration();
+                    wifiConfig.SSID = String.format("\"%s\"", wifis[i]);
+                    wifiConfig.preSharedKey = String.format("\"%s\"", "polinema"); //PASSWORD
+
+                    WifiManager wifiManager = (WifiManager) getApplicationContext().getSystemService(WIFI_SERVICE);
+                    //remember id
+                    int netId = wifiManager.addNetwork(wifiConfig);
+                    wifiManager.disconnect();
+                    wifiManager.enableNetwork(netId, true);
+                    wifiManager.reconnect();
+
+                    //INPUT TO FIREBASE
+                    fAuth = FirebaseAuth.getInstance();
+                    String user = fAuth.getCurrentUser().getUid();
+                    FirebaseDatabase database = FirebaseDatabase.getInstance();
+                    DatabaseReference myRef = database.getReference("user").child("Dosen").child(user + "/ssid");
+                    myRef.setValue("Gedung AH lantai 2");
+
+                    //MENAMPILKAN DATE&TIME
+                    Calendar calendar = Calendar.getInstance();
+                    SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEEE, dd-MMM-yyyy | hh:mm a");
+                    String dateTime = simpleDateFormat.format(calendar.getTime());
+                    myRef = database.getReference("user").child("Dosen").child(user + "/tgljam");
+                    myRef.setValue(dateTime);
+                }
+
             }
         }
     }

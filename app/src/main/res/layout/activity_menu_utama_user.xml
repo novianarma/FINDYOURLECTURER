@@ -45,4 +45,13 @@
         android:layout_marginTop="40dp"
         android:layout_marginLeft="40dp"/>
 
+    <Button
+        android:id="@+id/btpengaturan"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/pengaturan"
+        android:onClick="btpengaturan"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="80dp"/>
+
 </RelativeLayout>

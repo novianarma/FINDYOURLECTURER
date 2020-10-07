@@ -1,12 +1,10 @@
 package com.example.findyourlecturer;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.service.autofill.Dataset;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -14,9 +12,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Toast;
 
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -45,7 +41,7 @@ public class ListUserActivity extends AppCompatActivity {
 
         user = new user();
         etcari = (EditText) findViewById(R.id.caridosen2);
-        listviewdosen = (ListView) findViewById(R.id.listviewdosen);
+        listviewdosen = (ListView) findViewById(R.id.listmhs);
         database = FirebaseDatabase.getInstance();
         ref = database.getReference("user").child("dosen_dan_mahasiswa");
         list = new ArrayList<>();

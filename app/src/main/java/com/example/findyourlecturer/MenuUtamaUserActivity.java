@@ -39,7 +39,7 @@ import static com.example.findyourlecturer.R.layout.activity_login_user;
 import static com.example.findyourlecturer.R.layout.activity_menu_utama_user;
 
 public class MenuUtamaUserActivity extends AppCompatActivity {
-    Button btn;
+    Button btn, btPengaturan;
     TextView tvnama, tvno, tvemail;
 
     int position;
@@ -142,5 +142,29 @@ public class MenuUtamaUserActivity extends AppCompatActivity {
                 dialog.dismiss();
             }
         });
+    }
+
+    public void btpengaturan(View view) {
+        fAuth = FirebaseAuth.getInstance();
+        String user = fAuth.getCurrentUser().getUid();
+        DatabaseReference pengaturan = FirebaseDatabase.getInstance().getReference("user").child(session.getstatususer(getBaseContext())).child(user).child("tipeuser");
+        pengaturan.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                String data = dataSnapshot.getValue().toString();
+                if (data.equals("Dosen")){
+                    btPengaturan.setVisibility(View.VISIBLE);
+                }
+                else {
+                    btPengaturan.setVisibility(View.INVISIBLE);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
     }
 }

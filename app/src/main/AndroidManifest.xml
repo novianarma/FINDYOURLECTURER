@@ -14,7 +14,6 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,7 +22,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".HubungiDevActivity"></activity>
+        <activity android:name=".KecualikanActivity"></activity>
+        <activity android:name=".HubungiDevActivity" />
         <activity android:name=".EditProfilUserActivity" />
         <activity android:name=".InputNimNikActivity" />
         <activity android:name=".ListUserFragmentActivity" />

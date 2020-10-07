@@ -27,7 +27,7 @@
     </LinearLayout>
 
     <ListView
-        android:id="@+id/listviewdosen"
+        android:id="@+id/listmhs"
         android:layout_width="300dp"
         android:layout_height="250dp"
         android:layout_gravity="center_horizontal"

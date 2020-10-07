@@ -16,7 +16,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -56,7 +55,7 @@ public class DosenFragment extends Fragment {
 
         user = new user();
         etcari = (EditText) view.findViewById(R.id.caridosen);
-        listviewdosen = (ListView) view.findViewById(R.id.listviewdosen);
+        listviewdosen = (ListView) view.findViewById(R.id.listmhs);
         database = FirebaseDatabase.getInstance();
         ref = database.getReference("user").child("Dosen");
         list = new ArrayList<>();
